@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+.ap-anasayfa{
+    background-color: #0F1626;
+    width: 100%;
+    background-position: center;
+    background-size:cover;
+    
+}
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+.eight-rem{
+    font-size: 8rem;
+}
+.five-rem{
+    font-size: 5rem;
+}
+.p-med{
+    font-size: 1.8rem;
+    letter-spacing: 0.075rem;
+}

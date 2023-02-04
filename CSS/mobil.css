@@ -1,0 +1,34 @@
+
+#anasayfa p{
+    letter-spacing: 0.09rem;
+    font-size: 2.5rem;
+  }
+  #anasayfa h1{
+    letter-spacing: 0.09rem;
+    font-size: 4rem;
+  }
+  #anasayfa h2{
+    letter-spacing: 0.09rem;
+    font-size: 3rem;
+  }
+  .button-86{
+    height: 30px;
+    width: 65px;
+    font-size: 2rem;
+  }
+  #anasayfa img {
+    max-width: 165px;
+  }
+  #about p{
+    margin: 2rem;
+    font-size: 1rem;
+    letter-spacing: 0.060rem;
+}
+#about .container .box {
+  width: 15rem;
+  height: 15rem;
+}
+#about img{
+  width: 15rem;
+  height: 15rem;
+}
