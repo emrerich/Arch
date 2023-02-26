@@ -316,6 +316,41 @@ a, li:hover, li:focus, li:active {
   margin-bottom: 3rem;
   text-decoration: underline;
  }
+ #about .container-slide{
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 4rem;
+ }
+ #about .container-slide img{
+    margin: 2rem;
+ }
+#footer {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #AB987A;
+  text-decoration: none; 
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+ }
+ #footer a{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: white;
+ }
+ #footer i:hover{
+  color:#0F1626;
+  text-decoration: none;
+ }
+ .logolar{
+  margin: 2rem;
+ }
 
 @media (max-width: 600px) {
   .container .box:hover .content {
