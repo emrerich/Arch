@@ -176,7 +176,7 @@ a, li:hover, li:focus, li:active {
   margin-bottom: 5%;
   width: 150px;
   height: 60px;
-  font-size: 34px;
+  font-size: 25px;
   background: transparent;
   border: solid;
   border-color: #f0f0f0;
@@ -218,8 +218,8 @@ a, li:hover, li:focus, li:active {
   width: 35px;
   height: 35px;
   background: #ab987a90;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); */
   border-radius: 50px;
 }
 
@@ -335,21 +335,26 @@ a, li:hover, li:focus, li:active {
   display: flex;
   text-align: center;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-items: center;
+  justify-content: space-around;
 
  }
  #footer a{
-  margin-left: 2rem;
-  margin-right: 2rem;
+
   color: white;
+  text-decoration: none;
  }
- #footer i:hover{
+ #footer  a:hover,i:hover{
   color:#0F1626;
   text-decoration: none;
  }
  .logolar{
-  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
  }
 
 @media (max-width: 600px) {
@@ -359,4 +364,47 @@ a, li:hover, li:focus, li:active {
   .container .box:hover .imgBox {
     transform: translate(0, -3.5rem);
   }
+}
+.img-slider{
+  position:relative;
+  margin: 10px;
+}
+.img-slider .slide{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  border-radius: 5px;
+  clip-path:circle(0% at 0 50%);
+}
+.img-slider .slide.active{
+  clip-path:circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.img-slider .navigation{
+  z-index:2;
+  position: absolute;
+  display:flex;
+  top: 500px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.img-slider .navigation .btn{
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 80%;
+  cursor:pointer;
+
+}
+.img-slider .navigation .btn.active{
+  background-color: grey;
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 80%;
+  cursor:pointer;
+
 }
