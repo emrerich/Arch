@@ -408,3 +408,85 @@ a, li:hover, li:focus, li:active {
   cursor:pointer;
 
 }
+form{
+  color: black;
+}
+.container-contact{
+  background-image: url(/images/arka\ plan.jpg);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 80%;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.contact-img{
+  flex-grow:4;
+  background-color: #ff543d44;
+  height: 100%;
+ 
+}
+.contact-img img{
+  margin-top: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+
+}
+.contact-form{
+  flex-grow: 3;
+  background-color: #0f162635;
+  height: 100%;
+}
+.contact-form h1{
+  margin-top: 5rem;
+  font-weight: 500;
+  border: #0F1626;
+  font-size: 6rem;  
+
+}
+.container-contact form input{
+  font-size: 2rem;
+  margin: 1rem;
+  height: 45px;
+  width: 210px;
+  text-align: center;
+}
+.container-contact form button{
+  all: unset;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  width: 167px;
+  height: 60px;
+  font-size: 25px;
+  background: transparent;
+  border: solid;
+  border-color: #f0f0f0;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.container-contact form button:hover{
+  border-color: #ff543d;
+  color: #ff543d;
+}
+.message-box{
+  height: 200px !important;
+}
