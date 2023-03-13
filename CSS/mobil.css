@@ -1,66 +1,125 @@
-
-#anasayfa p{
-    letter-spacing: 0.09rem;
-    font-size: 2.5rem;
-  }
-  #anasayfa h1{
-    letter-spacing: 0.09rem;
-    font-size: 4rem;
-  }
-  #anasayfa h2{
-    letter-spacing: 0.09rem;
-    font-size: 3rem;
-  }
-  .button-86{
-    height: 30px;
-    width: 65px;
-    font-size: 2rem;
-  }
-  #anasayfa img {
-    max-width: 165px;
-  }
-  #about p{
-    margin: 2rem;
-    font-size: 1rem;
-    letter-spacing: 0.060rem;
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #AB987A;
+  width: 100%;
+  top:0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  position: fixed;
+  transition: top 0.7s;
+  margin-bottom: 5 !important;
 }
-#about .container .box {
-  width: 15rem;
-  height: 15rem;
-}
-#about img{
-  width: 15rem;
-  height: 15rem;
-}
-.contact-form h1{
-  font-weight: 500;
-  border: #0F1626;
-  font-size: 2.5rem;  
-
+nav img{
+  max-width: 40;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact-form{
-  flex-grow: 0;
+  flex-grow: 3;
   background-color: #0f162635;
-  height: 100%;
-  width: 100%;
+  height: 640px;
+}
+.contact-form h1{
+  margin-top: 4rem;
+  font-weight: 300;
+  border: #0F1626;
+  font-size: 4.2rem;  
+
 }
 .container-contact form input{
-  font-size: 1rem;
-  margin: 0.3rem;
-  height: 20px;
-  width: 105px;
-  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+  height: 40px;
+  width: 180px;
+  
 }
 .container-contact form button{
-  width: 100px;
-  height: 20px;
-  font-size: 1rem;
-}
-.container-contact{
   margin-top: 2rem;
-  width: 90%;
-  height: 100%;
+  width: 150px;
+  height: 60px;
 }
-.contact-img{
-display: none;
+.message-box{
+  height: 200px !important;
 }
+#anasayfa .col-sm-5 img{
+  margin: auto;
+  max-width: 150px;
+}
+.img-slider .navigation{
+  z-index:2;
+  position: absolute;
+  display:flex;
+  top: 340px;
+  left:50%;
+  transform: translateX(-50%);
+  background-color: #ff543d50;
+  width: 180px;
+  justify-content: space-around;
+}
+.img-slider .navigation .btn{
+  margin: 10px;
+  cursor: inherit;
+  padding: 0;
+  border-radius: 100%;
+}
+#about .container{
+  margin-top: 0;
+}
+#about .container .box {
+  float: none;
+  width: 30vw;
+  height: 30vw;
+ margin-left: auto;
+ margin-right: auto;
+}
+#about .container .box:hover .imgBox {
+  transform: translate(-2rem, -2rem);
+}
+#about .container .box:hover .content {
+  transform: translate(2rem, 2rem);
+}
+#about .col-4{
+  margin-bottom: 3rem;
+}
+.imgBox img {
+  width: 30vw;
+  height: 30vw;
+}
+.content {
+
+  width: 30vw;
+  height: 30vw;
+
+}
+
+.content h2 {
+  display: block;
+  font-size:1rem;
+  color: #111;
+  font-weight: 500;
+  line-height: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+.content span {
+  color: #555;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+#about p{
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 2.94vw;
+  line-height: 1.43rem;
+  letter-spacing: 0.03vw;
+}
+#about h1{
+  font-size:5vw;
+  text-align: center;
+  margin-bottom: 2vw;
+  text-decoration: underline;
+ }

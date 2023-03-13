@@ -1,0 +1,11 @@
+.img-slider .navigation{
+    z-index:2;
+    position: absolute;
+    display:flex;
+    top: 400px;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #ff543d50;
+    width: 200px;
+    justify-content: space-around;
+  }

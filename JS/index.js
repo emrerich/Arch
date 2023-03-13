@@ -31,6 +31,8 @@ toggleButton.addEventListener('click', ()=> {
 // slider
 var slides= document.querySelectorAll('.slide');
 var btns= document.querySelectorAll('.btn');
+var next = document.getElementById('sag-ok')
+var prev = document.getElementById('sol-ok')
 let currentSlide=1;
 
 var manualNav = function(manual){
@@ -45,12 +47,38 @@ var manualNav = function(manual){
     slides[manual].classList.add('active');
     btns[manual].classList.add('active');
 }
+
 btns.forEach((btn,i)=>{
     btn.addEventListener("click",()=>{
         manualNav(i);
         currentSlide=i;
+        
     });
 });
+next.addEventListener("click",() => NextButton());
+prev.addEventListener("click",() => PrevButton());
+function NextButton(){
+  
+  currentSlide++;
+  if(currentSlide > 3){
+      manualNav(0);
+      currentSlide = 0;
+  }else{
+    manualNav(currentSlide);
+    currentSlide = currentSlide;
+  }
+}
+function PrevButton(){
+  
+  currentSlide--;
+  if(currentSlide<0){
+      manualNav(3);
+      currentSlide = 3;
+  }else{
+    manualNav(currentSlide);
+    currentSlide = currentSlide;
+  }
+}
 
 
 var repeat = function(activeClass){
@@ -71,8 +99,29 @@ var repeat = function(activeClass){
                 return;
             }
             repeater();
-        },13000);
+        },1300000);
     }
     repeater();
 }
 repeat();
+var mediaQueryMobil = window.matchMedia('((max-width: 599px))');
+var mediaQueryTablet = window.matchMedia('((min-width: 600px) and (max-width: 1000px))');
+var mediaQueryWeb = window.matchMedia('((min-width: 1001px) and (max-width:1366px) )')
+window.onresize = function(){
+  if (mediaQueryTablet.matches) {
+    document.getElementById("sag-ok").classList = "fa-sharp fa-solid fa-arrow-right fa-5x"
+    document.getElementById("sol-ok").classList = "fa-sharp fa-solid fa-arrow-left fa-5x"
+    
+  }
+  if (mediaQueryWeb.matches) {
+    document.getElementById("sag-ok").classList = "fa-sharp fa-solid fa-arrow-right fa-7x"
+    document.getElementById("sol-ok").classList = "fa-sharp fa-solid fa-arrow-left fa-7x"
+    
+  }
+  if (mediaQueryMobil.matches) {
+    document.getElementById("sag-ok").classList = "fa-sharp fa-solid fa-arrow-right fa-4x"
+    document.getElementById("sol-ok").classList = "fa-sharp fa-solid fa-arrow-left fa-4x"
+    
+  }
+};
+

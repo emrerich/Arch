@@ -1,0 +1,37 @@
+.left-icon{
+    top: 200;
+  }
+  .right-icon{
+    top: 200;
+  }
+  #anasayfa .col-sm-7 h2{
+    
+    margin-bottom: 0;
+  }
+  .img-slider .navigation{
+    z-index:2;
+    position: absolute;
+    display:flex;
+    top: 360px;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #ff543d50;
+    width: 350px;
+    justify-content: space-around;
+  }
+  .img-slider .navigation .btn{
+    margin: 10px;
+    cursor: inherit;
+    padding: 0;
+    border-radius: 100%;
+  }
+
+  .content h2 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .content span {
+    font-size: 1.2rem;
+    letter-spacing: 1.7px;
+  }

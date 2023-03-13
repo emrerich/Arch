@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body
-{
+{ 
   margin: 0;
   padding: 0;
 }
@@ -124,7 +124,7 @@ a, li:hover, li:focus, li:active {
 @keyframes show{
   0%{
     opacity:0;
-    transform:translateY(-10px);
+    transform:translateY(-10px); 
   }
   100%{
     opacity:1;
@@ -142,16 +142,21 @@ a, li:hover, li:focus, li:active {
   margin-right: auto;
   }
   #anasayfa img{
-      max-width: 90%;
-      border: #16151b;
-      border-color:   black;
-      justify-content: center;
-      border-style:solid;
-      border-width: 2px;
+      max-width: 80%;
+      max-height: 80%;
+      margin-top: 15%;
       border-radius: 100%;
-      display: block; margin: auto;
-  
-  }
+      display: flex;  
+      box-shadow: 2.8px 5.6px 5.6px hsla(0, 0%, 0%, 0.41);
+      --shadow-color: 224deg 52% 8%;
+      --shadow-elevation-medium:
+      -0.3px 0.3px 0.5px hsl(var(--shadow-color) / 0.91),
+      -6.9px 6.6px 10.4px -2.7px hsl(var(--shadow-color) / 0.83);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    #anasayfa img:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
   #anasayfa .row{
     text-align: center;
     align-items: center;
@@ -174,9 +179,9 @@ a, li:hover, li:focus, li:active {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
-  width: 150px;
-  height: 60px;
-  font-size: 25px;
+  width: 12vw;
+  height: 4vw;
+  font-size: 2vw;
   background: transparent;
   border: solid;
   border-color: #f0f0f0;
@@ -193,7 +198,7 @@ a, li:hover, li:focus, li:active {
   touch-action: manipulation;
 }
 .container-md {
-  width:90%;
+  width:80%;
 }
 .button-86::after,
 .button-86::before {
@@ -250,16 +255,17 @@ a, li:hover, li:focus, li:active {
 }
 #about .container .box {
   position: relative;
-  width: 30rem;
-  height: 30rem;
-  margin: 8rem;
+  width: 20vw;
+  height: 20vw;
+  margin: 6.1vw;
+  margin-top: 7.3vw;
   float: left;
 }
 #about .container .box:hover .imgBox {
-  transform: translate(-1.5rem, -1.5rem);
+  transform: translate(-2rem, -2.5rem);
 }
 #about .container .box:hover .content {
-  transform: translate(5rem, 5rem);
+  transform: translate(3rem, 4rem);
 }
 .imgBox {
   position: absolute;
@@ -273,8 +279,8 @@ a, li:hover, li:focus, li:active {
 }
 
 .imgBox img {
-  width: 30rem;
-  height: 30rem;
+  width: 20vw;
+  height: 20vw;
   object-fit: cover;
   resize: both;
   float: left;
@@ -284,8 +290,8 @@ a, li:hover, li:focus, li:active {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 20vw;
+  height: 20vw;
   padding: 0.5rem;
   display: flex;
   justify-content: center;
@@ -311,9 +317,14 @@ a, li:hover, li:focus, li:active {
   font-weight: 300;
   letter-spacing: 2px;
 }
+#about p{
+  font-size: 1.3vw;
+  letter-spacing: 0.03vw;
+}
 #about h1{
+  font-size: 3.5vw;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2vw;
   text-decoration: underline;
  }
  #about .container-slide{
@@ -321,15 +332,31 @@ a, li:hover, li:focus, li:active {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin: 4rem;
+  margin-top: 3rem;
+  width: 100%;
+  margin-bottom: 6rem;
  }
  #about .container-slide img{
+  
+    opacity: 0.8;
+    width:20%;
     margin: 2rem;
+    box-shadow: 2.8px 5.6px 5.6px hsla(0, 0%, 0%, 0.41);
+    --shadow-color: 224deg 52% 8%;
+    --shadow-elevation-medium:
+    -0.3px 0.3px 0.5px hsl(var(--shadow-color) / 0.91),
+    -6.9px 6.6px 10.4px -2.7px hsl(var(--shadow-color) / 0.83);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
  }
+ #about .container-slide img:hover{
+  opacity: 1;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 #footer {
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
+  position:relative;
+  bottom:0px;
+  height: 200px;
+  width:100%;
   background-color: #AB987A;
   text-decoration: none; 
   display: flex;
@@ -368,6 +395,7 @@ a, li:hover, li:focus, li:active {
 .img-slider{
   position:relative;
   margin: 10px;
+  width: auto;
 }
 .img-slider .slide{
   z-index: 1;
@@ -386,33 +414,32 @@ a, li:hover, li:focus, li:active {
   z-index:2;
   position: absolute;
   display:flex;
-  top: 500px;
+  top: 460px;
   left:50%;
   transform: translateX(-50%);
+  background-color: #ff543d50;
+  width: 400px;
+  justify-content: space-around;
 }
 .img-slider .navigation .btn{
-  background-color: white;
-  width: 12px;
-  height: 12px;
   margin: 10px;
-  border-radius: 80%;
-  cursor:pointer;
-
+  cursor: inherit;
+  padding: 0;
+  border-radius: 100%;
 }
-.img-slider .navigation .btn.active{
-  background-color: grey;
-  width: 12px;
-  height: 12px;
-  margin: 10px;
-  border-radius: 80%;
-  cursor:pointer;
-
+.img-slider .navigation .btn.active i{
+  color: #ff543d;
+  cursor: pointer;
+}
+.img-slider .navigation .btn i:hover{
+  color:#972b1d;
+  cursor: pointer;
 }
 form{
   color: black;
 }
 .container-contact{
-  background-image: url(/images/arka\ plan.jpg);
+  background-image: url(/Arch/images/arka\ plan.jpg);
   background-repeat: no-repeat, repeat;
   background-position: center;
   position: relative;
@@ -421,30 +448,17 @@ form{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  height: 80%;
+  max-width: 70%;
+  max-height: 600px;
   font-size: 4rem;
   color: white;
   text-align: center;
   margin-bottom: 10rem;
 }
-.contact-img{
-  flex-grow:4;
-  background-color: #ff543d44;
-  height: 100%;
- 
-}
-.contact-img img{
-  margin-top: 20rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
-
-}
 .contact-form{
   flex-grow: 3;
   background-color: #0f162635;
-  height: 100%;
+  height: 600px;
 }
 .contact-form h1{
   margin-top: 5rem;
@@ -459,9 +473,9 @@ form{
   height: 45px;
   width: 210px;
   text-align: center;
+  
 }
 .container-contact form button{
-  all: unset;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
@@ -473,15 +487,10 @@ form{
   border-color: #f0f0f0;
   color: #f0f0f0;
   cursor: pointer;
-  z-index: 1;
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
 }
 .container-contact form button:hover{
   border-color: #ff543d;
@@ -489,4 +498,30 @@ form{
 }
 .message-box{
   height: 200px !important;
+}
+.index-footer{
+  top: auto;
+  bottom:-660px !important;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  
+}
+.left-icon{
+  top: 210;
+  position: absolute;
+  display: flex;
+  left: 10;
+  z-index: 6;
+}
+.right-icon{
+  top: 210;
+  position: absolute;
+  display: flex;
+  right: 10;
+  z-index: 6;
+}
+.right-icon i:hover,.left-icon i:hover{
+  color:#ff543d;
+  cursor:pointer;
 }

@@ -23,33 +23,59 @@
     display: flex;
 }
 #anasayfa img{
-    max-width: 178px;
+    max-width: 60%;
 }
-#anasayfa h1{
-    letter-spacing: 0.09rem;
-    font-size: 5rem;
-  }
-  #anasayfa h2{
-    letter-spacing: 0.09rem;
-    font-size: 4rem;
-  }
-  .button-86{
-    height: 40px;
-    width: 85px;
-    font-size: 2.6rem;
-  }
 
-/* About */
-#about p{
-    margin: 2rem;
-    font-size: 1.3rem;
-    letter-spacing: 0.070rem;
-}
-#about .container .box {
-    width: 23rem;
-    height: 23rem;
+  .left-icon{
+    top: 120 ;
   }
-  #about img{
-    width: 23rem;
-    height: 23rem;
+  .right-icon{
+    top: 120;
+  }
+  .row{
+    flex-direction: column;
+  }
+  #anasayfa .col-sm-5{
+    justify-content: center;
+    align-items: center;
+  }
+  #anasayfa .col-sm-5 img{
+    margin: auto;
+    max-width: 200px;
+  }
+  .img-slider .navigation{
+    z-index:2;
+    position: absolute;
+    display:flex;
+    top: 450px;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #ff543d50;
+    width: 250px;
+    justify-content: space-around;
+  }
+  .img-slider .navigation .btn{
+    margin: 10px;
+    cursor: inherit;
+    padding: 0;
+    border-radius: 100%;
+  }
+  .index-footer{
+    top: auto;
+    bottom: -760px !important;
+  }
+  .content h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .content span {
+    font-size: 1.1rem;
+    letter-spacing: 1.2px;
+  }
+  #about .container .box:hover .imgBox {
+    transform: translate(-2rem, -1.8rem);
+  }
+  #about .container .box:hover .content {
+    transform: translate(2rem, 4.2rem);
   }
